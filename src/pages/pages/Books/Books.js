@@ -246,8 +246,8 @@ function BookList() {
       if (actionsLoading === false) {
         handleClose();
       }
-    }, dispatch(actions.updateBook(values)));
-    dispatch(actions.fetchBooks({}));
+    },await dispatch(actions.updateBook(values)));
+    await dispatch(actions.fetchBooks({}));
   };
   useEffect(() => {
       dispatch(studentActions.fetchStudents({}));
