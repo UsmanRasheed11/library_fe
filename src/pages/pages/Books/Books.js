@@ -239,6 +239,7 @@ function BookList() {
     (state) => ({ currentState: state.books }),
     shallowEqual
   );
+  
   const { entities, listLoading, actionsLoading } = currentState;
   const dispatch = useDispatch();
   const handleSubmit = async (values, handleClose) => {
